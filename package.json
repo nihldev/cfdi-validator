@@ -1,7 +1,7 @@
 {
   "name": "@nihl/cfdi-validator",
   "version": "0.1.0",
-  "description": "Validates a CFDI v3.3 agains SAT's SOAP web service",
+  "description": "Validates a CFDI v3.3 against SAT's SOAP web service",
   "scripts": {
     "test": "jest && node_modules/prettier/bin-prettier.js -c src/*.ts"
   },
