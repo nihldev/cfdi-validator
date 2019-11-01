@@ -3,7 +3,10 @@
   "version": "0.0.1",
   "description": "Validates a CFDI v3.3 against SAT's SOAP web service",
   "scripts": {
-    "test": "jest && node_modules/prettier/bin-prettier.js -c src/*.ts"
+    "test": "npm run test:lint && npm run test:jest",
+    "test:jest": "npx jest",
+    "test:lint": "npx prettier -c src/*.ts",
+    "build": "npx babel src --out-dir dist --extensions '.ts'"
   },
   "keywords": [
     "sat",
@@ -20,6 +23,7 @@
   "license": "BSD-3-Clause",
   "dependencies": {},
   "devDependencies": {
+    "@babel/cli": "^7.6.4",
     "@babel/core": "^7.6.4",
     "@babel/preset-env": "^7.6.3",
     "@babel/preset-typescript": "^7.6.0",
