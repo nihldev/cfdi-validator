@@ -11,6 +11,9 @@
     "build:source": "npx babel src --out-dir dist --extensions '.ts'",
     "build:declarations": "tsc --emitDeclarationOnly"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "keywords": [
     "sat",
     "cfdi",
@@ -22,7 +25,7 @@
     "dist/**"
   ],
   "author": "Diego Romero",
-  "repository": "nihl/cfdi-validator",
+  "repository": "git://github.com/nihldev/cfdi-validator.git",
   "license": "BSD-3-Clause",
   "dependencies": {},
   "devDependencies": {
