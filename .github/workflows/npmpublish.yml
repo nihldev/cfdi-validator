@@ -24,6 +24,7 @@ jobs:
         with:
           node-version: 12
           registry-url: https://registry.npmjs.org/
+          scope: '@nihldev'
       - run: npm ci
       - run: npm run build
       - run: npm publish
@@ -39,7 +40,7 @@ jobs:
         with:
           node-version: 12
           registry-url: https://npm.pkg.github.com/
-          scope: '@nihl'
+          scope: '@nihldev'
       - run: npm ci
       - run: npm run build
       - run: npm publish --registry=https://npm.pkg.github.com/
