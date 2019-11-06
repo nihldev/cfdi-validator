@@ -59,3 +59,4 @@ const validateCFDI = async (
 };
 
 export default validateCFDI;
+export { validateCFDI, CFDIValidationResponse };
