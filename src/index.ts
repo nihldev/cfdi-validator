@@ -37,7 +37,6 @@ const validateCFDI = async (
   try {
     client = await createClientAsync(url);
   } catch (error) {
-    console.error(error);
     throw "Error creating a client for the given url";
   }
   try {
@@ -52,7 +51,6 @@ const validateCFDI = async (
     };
     return result;
   } catch (error) {
-    console.error(error);
     throw "There was an error while querying with the given parameters";
   }
 };
