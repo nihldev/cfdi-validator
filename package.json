@@ -4,7 +4,7 @@
   "description": "Validates a CFDI v3.3 against SAT's SOAP web service",
   "scripts": {
     "test": "npm run test:lint && npm run test:check-types && npm run test:jest",
-    "test:jest": "npx jest",
+    "test:jest": "npx jest --silent",
     "test:lint": "npx prettier -c src/*.ts",
     "test:check-types": "tsc --noEmit",
     "build": "npm run build:source && npm run build:declarations",
