@@ -44,7 +44,6 @@ const validateCFDI = async (
     let response = await client.ConsultaAsync(args);
     const [RESULT_POSITION, RESULT_KEY] = [0, "ConsultaResult"];
     response = response[RESULT_POSITION][RESULT_KEY];
-    console.debug(response);
     const result: CFDIValidationResponse = {
       responseStatus: response["CodigoEstatus"] || undefined,
       cfdiStatus: response["Estado"] || undefined,
