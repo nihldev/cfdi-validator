@@ -27,12 +27,15 @@
   "author": "Diego Romero",
   "repository": "git://github.com/nihldev/cfdi-validator.git",
   "license": "BSD-3-Clause",
-  "dependencies": {},
+  "dependencies": {
+    "soap": "^0.30.0"
+  },
   "devDependencies": {
     "@babel/cli": "^7.6.4",
     "@babel/core": "^7.6.4",
     "@babel/preset-env": "^7.6.3",
     "@babel/preset-typescript": "^7.6.0",
+    "@types/bluebird": "^3.5.28",
     "@types/jest": "^24.0.21",
     "@types/node": "^12.12.3",
     "@typescript-eslint/parser": "^2.6.0",
