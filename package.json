@@ -1,10 +1,10 @@
 {
   "name": "@nihldev/cfdi-validator",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Validates a CFDI v3.3 against SAT's SOAP web service",
   "scripts": {
     "test": "npm run test:lint && npm run test:check-types && npm run test:jest",
-    "test:jest": "npx jest",
+    "test:jest": "npx jest --silent",
     "test:lint": "npx prettier -c src/*.ts",
     "test:check-types": "tsc --noEmit",
     "build": "npm run build:source && npm run build:declarations",
@@ -27,12 +27,15 @@
   "author": "Diego Romero",
   "repository": "git://github.com/nihldev/cfdi-validator.git",
   "license": "BSD-3-Clause",
-  "dependencies": {},
+  "dependencies": {
+    "soap": "^0.30.0"
+  },
   "devDependencies": {
     "@babel/cli": "^7.6.4",
     "@babel/core": "^7.6.4",
     "@babel/preset-env": "^7.6.3",
     "@babel/preset-typescript": "^7.6.0",
+    "@types/bluebird": "^3.5.28",
     "@types/jest": "^24.0.21",
     "@types/node": "^12.12.3",
     "@typescript-eslint/parser": "^2.6.0",
