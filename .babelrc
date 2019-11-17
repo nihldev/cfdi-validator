@@ -1,11 +1,12 @@
+// vi: ft=javascript
 {
   "presets": [
-      "@babel/preset-env",
-      [
-        "@babel/preset-typescript",
-        {
-          "allExtensions": true
-        }
-      ]
+    "@babel/preset-env",
+    [
+      "@babel/preset-typescript",
+      {
+        "allExtensions": true
+      }
     ]
+  ]
 }
