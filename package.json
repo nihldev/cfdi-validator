@@ -37,7 +37,7 @@
     "@babel/preset-typescript": "^7.6.0",
     "@types/bluebird": "^3.5.28",
     "@types/jest": "^26.0.0",
-    "@types/node": "^15.0.1",
+    "@types/node": "^16.0.0",
     "@typescript-eslint/parser": "^4.0.1",
     "eslint": "^7.2.0",
     "eslint-config-prettier": "^8.0.0",
